@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<Listeners>
+<listener>
+<class name="com.qa.util.WebEventListener"/>
+
+</Listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.qa.tests.HomePageTestValidate"/>
+      <class name="com.qa.tests.MediaPageTest"/>
+      <class name="com.qa.tests.LoginTestValidate"/>
+      <class name="com.qa.tests.UserPageTest"/>
+      <class name="com.qa.tests.ToolPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
