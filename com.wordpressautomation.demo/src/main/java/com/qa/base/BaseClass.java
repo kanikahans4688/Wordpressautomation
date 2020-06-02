@@ -9,15 +9,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
+import com.qa.util.TestListener;
 import com.qa.util.Utility;
-
-import com.qa.util.WebEventListener;
 
 public class BaseClass {
 	
 	public static WebDriver driver;
 	public static Properties prop;
-	public static WebEventListener eventlistener;
+	public static TestListener eventlistener;
 	public  static EventFiringWebDriver e_driver;
 	
 	public BaseClass() {
@@ -45,7 +44,7 @@ public class BaseClass {
 	
 	if(browsername.equals("chrome")) {
 		
-		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\all\\ChromeDriver83\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\all\\ChromeDriver83\\chromedriver.exe");
 		
 		driver=new ChromeDriver();
 		
@@ -55,7 +54,7 @@ public class BaseClass {
 	
 	e_driver= new EventFiringWebDriver(driver);
 	
-	eventlistener=new WebEventListener();
+	eventlistener=new TestListener();
 	
 	e_driver.register(eventlistener);
 	

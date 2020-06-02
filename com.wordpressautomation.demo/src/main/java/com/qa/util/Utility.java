@@ -21,7 +21,7 @@ public class Utility extends BaseClass {
 	public static long PAGE_LOAD_TIMEOUT=20;
 	public static long IMPLICITLY_WAIT=10;
 	
-	public static String TESTDATA_PATH="C:\\Users\\all\\eclipse-workspace\\com.wordpressautomation.demo\\src\\main\\java\\com\\qa\\testdata\\sheet.xlsx";
+	public static String TESTDATA_PATH="C:\\Users\\all\\git\\Wordpressautomation\\com.wordpressautomation.demo\\src\\main\\java\\com\\qa\\testdata\\sheet.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;
